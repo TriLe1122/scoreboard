@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>ScoreBoard</title>
+</head>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+
+<body class="debug">
+  <main>
+
+
+    <section class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <button id="reset" class="btn btn-danger" onclick="resetScore()">Reset</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="row ">
+        <!-- NOTE YOUR SCORE -->
+        <div class="col-6 bg-dark text-light text-center">
+          <h1>You</h1>
+          <div id="yourScore">00</div>
+          <button onclick="increaseYours2()">+2</button>
+          <button onclick="increaseYours3()">+3</button>
+          <button onclick="increaseYours4()">+4</button>
+        </div>
+        <!-- NOTE THERE SCORE -->
+        <div class="col-6 bg-dark text-light text-center">
+          <h1>Them</h1>
+          <div id="theirScore">00</div>
+          <button onclick="increaseTheirs2()">+2</button>
+          <button onclick="increaseTheirs3()">+3</button>
+          <button onclick="increaseTheirs4()">+4</button>
+        </div>
+
+
+
+
+
+
+
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
